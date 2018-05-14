@@ -1,11 +1,10 @@
 <template>
  <div>
-<el-row>
-  <el-button>默认按钮</el-button>
-  <el-button size="medium">中等按钮</el-button>
-  <el-button size="small">小型按钮</el-button>
-  <el-button size="mini">超小按钮</el-button>
-</el-row>
+   <el-container>
+     <el-header>99</el-header>
+     <el-main>78</el-main>
+     <el-footer>12</el-footer>
+   </el-container>
  </div>
 </template>
 
