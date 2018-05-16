@@ -1,0 +1,22 @@
+.el-header{
+    height: auto !important;
+}
+.logo,.nav-left{
+    float: left;
+}
+.logo{
+    margin-right: 2em;
+}
+.nav-left{
+    font-size: 18px;
+}
+.nav-left li{
+    float: left;
+    margin-right: 1.5em;
+}
+.nav{
+    height: 2em;
+    line-height: 2em;
+    padding: 1em 0;
+    color: #969696;
+}
