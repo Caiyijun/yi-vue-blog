@@ -1,7 +1,5 @@
 <template>
-    <div class="wrap">
-        <el-main>
-            
-        </el-main>
-    </div>
+    <el-col :span="20"> 
+        我是内容
+    </el-col>
 </template>
