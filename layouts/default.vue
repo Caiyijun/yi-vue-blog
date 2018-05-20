@@ -1,20 +1,20 @@
 <template>
-  <div class="wrap">
     <el-container>
       <elnav></elnav>
       <el-main>
-        <el-row :gutter="20">
-          <elside></elside>
-          <el-col :span="20"> 
-            <nuxt/>
-          </el-col>
-        </el-row>
+        <div class="wrap">
+          <el-row :gutter="20">
+            <elside></elside>
+            <el-col :span="20" class="contain"> 
+                <nuxt/>
+            </el-col>
+          </el-row>
+        </div>
       </el-main>
       <el-footer>
         <elfoot></elfoot>
       </el-footer>
     </el-container>
-  </div>
 </template>
 
 <script>
@@ -34,4 +34,8 @@ export default {
 
 
 <style>
+.contain{
+    float: left;
+    /* position: relative; */
+}
 </style>

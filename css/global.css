@@ -1,24 +1,36 @@
+body{
+    background: #F5F6FA;
+}
 .el-header{
     height: auto !important;
+    width: 100%;
+    padding: 0px !important;
+}
+.el-main{
+    margin-top: 90px
 }
 .logo,.nav-left{
     float: left;
 }
 .logo{
-    margin-right: 2em;
+    margin-right: 35px;
 }
 .nav-left{
     font-size: 18px;
 }
 .nav-left li{
     float: left;
-    margin-right: 1.5em;
+    margin-right: 25px;
 }
 .nav{
-    height: 2em;
-    line-height: 2em;
-    padding: 1em 0;
+    height: 45px;
+    line-height: 45px;
+    padding:15px 0;
     color: #969696;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: #fff;
 }
 .copyright{
     color: rgba(0,0,0,0.5);

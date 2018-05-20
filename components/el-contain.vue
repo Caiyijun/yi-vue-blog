@@ -1,5 +1,7 @@
 <template>
-    <el-col :span="20"> 
-        我是内容
-    </el-col>
+    <div class="contain">
+        
+    </div>
 </template>
+<style>
+</style>

@@ -50,4 +50,4 @@ table {
 }
 .cl{clear:both; overflow: hidden; } 
 a{color: #969696;}
-.wrap{width: 1200px;margin: 0 auto;}
+.wrap{width: 1200px;margin: 0 auto;zoom: 1;}
