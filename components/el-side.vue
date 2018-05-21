@@ -24,7 +24,7 @@ export default {
     created: function(){
         axios.get('http://www.likecn.cn/wp-json/wp/v2/categories')
         .then(res => {
-            console.log(res);
+            // console.log(res);
             this.categories = res.data;
         })
         .catch(error => {
