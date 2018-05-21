@@ -4,8 +4,10 @@
         <p>目前所在分类: {{ categoriesname }} </p>
         <ul>
             <li v-for="(item,i) in thisCategoriesArticle" :key="i" >
+              <nuxt-link :to="{ name:'article-id',params:{ id:thisCategoriesArticle[i].id }}">
                 <h2>{{ thisCategoriesArticle[i].title.rendered }}</h2>
                 <p v-html="thisCategoriesArticle[i].excerpt.rendered"></p>
+              </nuxt-link>
                 <p>
                     <span>{{ thisCategoriesArticle[i].date }} </span>
                 </p>

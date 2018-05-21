@@ -2,8 +2,10 @@
  <div>
     <ul>
       <li v-for="(item,i) in article" :key='i'>
-        <h2>{{ article[i].title.rendered }}</h2>
-        <p v-html="article[i].excerpt.rendered"></p>
+        <nuxt-link :to="{ name:'article-id',params:{id:article[i].id}}">
+          <h2>{{ article[i].title.rendered }}</h2>
+          <p v-html="article[i].excerpt.rendered"></p>
+        </nuxt-link>
         <p>
           <span>{{ article[i].date }}</span>
         </p>
