@@ -1,11 +1,11 @@
 <template>
     <el-container>
-      <elnav></elnav>
+      <elnav :span='10' :offset='2'></elnav>
       <el-main>
         <div class="wrap">
           <el-row :gutter="20">
             <elside></elside>
-            <el-col :span="20" class="contain"> 
+            <el-col :span="14" class="contain"> 
                 <nuxt/>
             </el-col>
           </el-row>

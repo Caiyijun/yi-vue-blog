@@ -1,15 +1,14 @@
 <template>
  <div>
-    <ul>
-      <li v-for="(item,i) in article" :key='i'>
+    <ul class="list">
+      <li v-for="(item,i) in article" :key='i' class="item">
         <nuxt-link :to="{ name:'article-id',params:{id:article[i].id}}">
-          <h2>{{ article[i].title.rendered }}</h2>
-          <p v-html="article[i].excerpt.rendered"></p>
+          <h2 class="item-title">{{ article[i].title.rendered }}</h2>
+          <p class="item-excerpt" v-html="article[i].excerpt.rendered"></p>
         </nuxt-link>
         <p>
-          <span>{{ article[i].date }}</span>
+          <span class="item-time">{{ article[i].date }}</span>
         </p>
-        <p>-------------------------------------------</p>
       </li>
     </ul>
  </div>

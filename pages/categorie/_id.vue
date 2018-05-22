@@ -1,15 +1,15 @@
 <template>
     <div>
         <!-- id:{{ $route.params.id }} -->
-        <p>目前所在分类: {{ categoriesname }} </p>
-        <ul>
-            <li v-for="(item,i) in thisCategoriesArticle" :key="i" >
-              <nuxt-link :to="{ name:'article-id',params:{ id:thisCategoriesArticle[i].id }}">
-                <h2>{{ thisCategoriesArticle[i].title.rendered }}</h2>
-                <p v-html="thisCategoriesArticle[i].excerpt.rendered"></p>
+        <div class="site">目前所在分类: {{ categoriesname }} </div>
+        <ul class="list">
+            <li v-for="(item,i) in thisCategoriesArticle" :key="i" class="item">
+              <nuxt-link :to="{ name:'article-id',params:{ id:thisCategoriesArticle[i].id,date:thisCategoriesArticle[i].date }}">
+                <h2 class="item-title">{{ thisCategoriesArticle[i].title.rendered }}</h2>
+                <p class="item-excerpt" v-html="thisCategoriesArticle[i].excerpt.rendered"></p>
               </nuxt-link>
                 <p>
-                    <span>{{ thisCategoriesArticle[i].date }} </span>
+                    <span class="item-time">{{ thisCategoriesArticle[i].date }} </span>
                 </p>
             </li>
         </ul>
@@ -53,22 +53,6 @@
                     }
                     this.thisCategoriesArticle = thatArticle;
                     console.log(thatArticle);
-                    // this.article = articleres.data
-                    // var articleData = articleres.data,
-                    //     articleDate = [],
-                    //     dateList = [];
-                    // console.log(articleData);
-                    // for (let i = 0; i < articleData.length; i++){
-                    //     let Arr = articleres.data[i].date;
-                    //     articleDate.push(Arr);
-                    // }
-                    // for(let i=0; i<articleDate.length; i++){
-                    // let arrlist = articleDate[i]
-                    // let arrStred = arrlist.substring(0,10)
-                    // dateList.push(arrStred)
-                    // }
-                    // console.log(dateList);
-                    // this.AllDateList = dateList;
                 }))
                 .catch((error)=>{})
             }

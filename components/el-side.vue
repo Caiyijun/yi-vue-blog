@@ -1,5 +1,5 @@
 <template>
-    <el-col :span="4" class="nav-col">
+    <el-col :span="4" :offset="2" class="nav-col">
         <div class="sidenav">
             <ul class="nav-side">
                 <li class="sidemenu" v-for="(item,i) in categories" :key="i">
@@ -42,11 +42,15 @@ export default {
     z-index:999;
 }
 .nav-side{
-    background: #fff;
+    background: rgba(255,255,255,0.2);
     font-size: 14px;
     color: #444;
     border-radius: 8px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.05);
+    box-shadow: 0 0 30px rgba(0,0,0,0.03);
+    transition: all .5s ease;
+}
+.nav-side:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,0.08);
 }
 .nav-side .sidemenu{
     height:40px;
